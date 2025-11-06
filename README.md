@@ -124,9 +124,23 @@ start.bat
 sudo python3 run.py
 ```
 
-### 3. Configure Target Devices
+### 3. Enable Proxy on Your System (Windows Only)
 
-On each device you want to monitor:
+**If testing on the same PC running PromptSniffer:**
+
+Right-click `enable_proxy.bat` and **Run as Administrator**
+
+This automatically configures Windows to route traffic through PromptSniffer (127.0.0.1:8080).
+
+**When done monitoring:**
+
+Right-click `disable_proxy.bat` and **Run as Administrator** to restore normal internet access.
+
+**Alternative:** Manually configure proxy in Windows Settings → Network & Internet → Proxy
+
+### 4. Configure Target Devices
+
+On each remote device you want to monitor:
 
 #### A. Set Proxy Settings
 
@@ -313,5 +327,3 @@ The authors:
 ---
 
 **⭐ Star this repo if you find it useful!**
-
-**Made with ❤️ for the security community**
