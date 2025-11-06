@@ -1,0 +1,49 @@
+{
+    "email": {
+        "sender": "ThatGuy@gmail.com",
+        "recipients": [
+            "ThatOtherGuy@gmail.com"
+        ],
+        "app_password": "ENTER_GMAIL_APP_PASS_HERE",
+        "smtp_server": "smtp.gmail.com",
+        "smtp_port": 587
+    },
+    "monitoring": {
+        "log_file": "prompt_sniffer.log",
+        "alert_on_sensitive_keywords": true,
+        "sensitive_keywords": [
+            "password",
+            "api key",
+            "secret",
+            "token",
+            "credential",
+            "confidential",
+            "internal"
+        ],
+        "capture_all_prompts": true
+    },
+    "llm_endpoints": {
+        "openai": [
+            "api.openai.com",
+            "chat.openai.com",
+            "chatgpt.com"
+        ],
+        "anthropic": [
+            "api.anthropic.com",
+            "claude.ai"
+        ],
+        "google": [
+            "generativelanguage.googleapis.com",
+            "gemini.google.com"
+        ],
+        "microsoft": [
+            "api.bing.com",
+            "copilot.microsoft.com"
+        ],
+        "other": [
+            "api.cohere.ai",
+            "api.mistral.ai",
+            "api.perplexity.ai"
+        ]
+    }
+}
