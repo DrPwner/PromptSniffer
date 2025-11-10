@@ -5,6 +5,38 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![mitmproxy](https://img.shields.io/badge/mitmproxy-12.0+-green.svg)](https://mitmproxy.org/)
+[![Stars](https://img.shields.io/github/stars/DrPwner/PromptSniffer?style=social)](https://github.com/DrPwner/PromptSniffer/stargazers)
+[![GitHub Issues](https://img.shields.io/github/issues/DrPwner/PromptSniffer)](https://github.com/DrPwner/PromptSniffer/issues)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#-contributing)
+
+## What is PromptSniffer?
+
+PromptSniffer is a **network security auditing tool** and **data loss prevention (DLP) solution** that intercepts and monitors prompts sent to Large Language Models like ChatGPT, Claude, and Gemini across your entire network. Unlike metadata extractors or prompt analyzers, PromptSniffer operates at the network level using HTTPS interception to capture real-time LLM API traffic.
+
+**Use Cases:**
+- 🏢 Corporate Data Loss Prevention (DLP) monitoring
+- 🔒 Authorized penetration testing engagements
+- 🔬 Security research in controlled environments
+- 📋 Compliance auditing (GDPR, CCPA, HIPAA)
+- 🚨 Insider threat detection
+- 👁️ Shadow AI usage monitoring
+
+---
+
+## How is This Different from Other "PromptSniffers"?
+
+| Feature | This Project (Network Monitor) | Image Metadata Extractors | Prompt Analyzers |
+|---------|-------------------------------|---------------------------|------------------|
+| Network-level monitoring | ✅ | ❌ | ❌ |
+| Real-time traffic interception | ✅ | ❌ | ❌ |
+| Multi-LLM support | ✅ (7+ services) | N/A | Limited |
+| DLP/Security focus | ✅ | ❌ | ❌ |
+| Works on any device | ✅ | ❌ | ❌ |
+| Agent installation required | ❌ (Proxy only) | N/A | N/A |
+
+**Note**: If you're looking to extract prompts from AI-generated images, check out [Mohsyn/PromptSniffer](https://github.com/Mohsyn/PromptSniffer). This project is for network security monitoring and data loss prevention.
+
+---
 
 PromptSniffer is a security auditing tool designed for authorized penetration testing and corporate DLP monitoring. It captures and monitors prompts sent to Large Language Models (ChatGPT, Claude, Gemini, etc.) across your entire network, providing real-time email alerts and comprehensive logging.
 
@@ -326,4 +358,14 @@ The authors:
 
 ---
 
-**⭐ Star this repo if you find it useful!**
+## ⭐ Support This Project
+
+If PromptSniffer helps you secure your network or conduct security research, please consider:
+- ⭐ **Starring this repository** - It helps others discover the project
+- 🐛 **Reporting bugs** - Help us improve
+- 💡 **Suggesting features** - Share your ideas
+- 🤝 **Contributing** - Pull requests welcome!
+
+**Found this useful? Star the repo to show your support!**
+
+[![Star History](https://img.shields.io/github/stars/DrPwner/PromptSniffer?style=social)](https://github.com/DrPwner/PromptSniffer/stargazers)

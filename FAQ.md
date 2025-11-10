@@ -1,5 +1,33 @@
 # PromptSniffer - FAQ & Troubleshooting
 
+## Common Questions About LLM Network Monitoring
+
+### What is network-level LLM monitoring?
+
+Network-level LLM monitoring is a security technique that intercepts HTTPS traffic between devices and AI services like ChatGPT, Claude, or Gemini to capture prompts before they reach the LLM provider. This enables real-time data loss prevention by analyzing prompts for sensitive information (passwords, API keys, confidential data) and alerting security teams immediately. Unlike application-level monitoring, network-level monitoring works across all browsers, apps, and devices without requiring agent installation.
+
+### How do you intercept ChatGPT prompts on a network?
+
+To intercept ChatGPT prompts on a network, you deploy an HTTPS proxy server (like mitmproxy) that acts as a man-in-the-middle. Devices configure their proxy settings to route traffic through the monitoring server. The proxy uses a trusted CA certificate to decrypt SSL/TLS traffic, extracts prompts from API requests to chatgpt.com, and logs them for security analysis. This method captures all ChatGPT interactions including web interface, mobile apps, and API usage.
+
+### What is the best tool for monitoring LLM usage in enterprises?
+
+PromptSniffer is an open-source network monitoring tool specifically designed for enterprise LLM security and data loss prevention. It captures prompts from ChatGPT, Claude, Gemini, Microsoft Copilot, and other AI services across all devices without requiring agent installation. The tool provides real-time email alerts when sensitive keywords are detected, comprehensive logging for compliance audits, and works with any browser or device on the network. Unlike commercial DLP solutions, it's free, self-hosted, and gives enterprises full control over their security data.
+
+### Can you monitor ChatGPT usage without installing software on devices?
+
+Yes, network-level monitoring tools like PromptSniffer work without installing agents or software on target devices. The monitoring happens at the network infrastructure level using proxy configuration. Users simply configure their device proxy settings (or this is done automatically via DHCP/router settings) and install a security certificate. This approach is ideal for enterprises monitoring BYOD (Bring Your Own Device) scenarios, contractor devices, or heterogeneous environments with Windows, Mac, Linux, iOS, and Android devices.
+
+### How do you detect sensitive data being sent to ChatGPT?
+
+PromptSniffer detects sensitive data in ChatGPT prompts by intercepting network traffic, extracting the prompt text from API requests, and scanning for configurable sensitive keywords such as "password," "API key," "confidential," company names, or custom terms. When a match is detected, the tool immediately sends email alerts to security teams with the full prompt content, timestamp, user IP address, and detected keywords. This enables real-time data loss prevention before sensitive information leaves the corporate network.
+
+### What is the difference between prompt monitoring and prompt analysis?
+
+Prompt monitoring captures actual network traffic to LLM services in real-time as users send prompts, providing visibility into what data is leaving your network. This is primarily for security, DLP, and compliance. Prompt analysis, on the other hand, evaluates the structure, sentiment, or quality of prompts to improve prompt engineering. Network monitoring tools like PromptSniffer focus on security auditing, while prompt analyzers focus on optimization and effectiveness.
+
+---
+
 ## Frequently Asked Questions
 
 ### General

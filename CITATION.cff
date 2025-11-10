@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use PromptSniffer in your research or security work, please cite it using the following metadata."
+title: "PromptSniffer: Network-Wide LLM Prompt Monitoring & Data Loss Prevention Tool"
+abstract: "PromptSniffer is an open-source network security auditing tool and data loss prevention (DLP) solution that intercepts and monitors prompts sent to Large Language Models like ChatGPT, Claude, and Gemini across entire networks. It provides real-time email alerts, comprehensive logging, and sensitive keyword detection for authorized penetration testing and corporate security monitoring."
+authors:
+  - family-names: "DrPwner"
+    alias: "DrPwner"
+type: software
+repository-code: "https://github.com/DrPwner/PromptSniffer"
+url: "https://github.com/DrPwner/PromptSniffer"
+keywords:
+  - llm-security
+  - data-loss-prevention
+  - dlp
+  - network-monitoring
+  - penetration-testing
+  - security-audit
+  - chatgpt-security
+  - claude-security
+  - prompt-injection
+  - mitmproxy
+  - https-interception
+  - ai-security
+  - cybersecurity
+  - infosec
+  - threat-detection
+  - compliance-monitoring
+license: MIT
+version: 1.0.0
+date-released: "2025-01-10"
